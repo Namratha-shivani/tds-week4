@@ -24,4 +24,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add current_date.txt
           git commit -m "Daily commit $(date +'%Y-%m-%d')"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/your-username/your-repo.git HEAD:main
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/Namratha-shivani/tds_week4.git HEAD:main
