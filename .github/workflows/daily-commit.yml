@@ -24,4 +24,5 @@ jobs:
           git config user.email "shivani_namratha@yahoo.com"
           git add last_updated.txt
           git commit -m "Daily update: $(date -u)" || echo "No changes to commit"
+          git push
       
