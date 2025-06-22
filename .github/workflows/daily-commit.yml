@@ -23,6 +23,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "shivani_namratha@yahoo.com"
           git add last_updated.txt
-          git commit -m "Daily update: $(date -u)" || echo "No changes to commit"
-          git push
+          git commit last_updated.txt -m "Daily update: $(date -u)" || echo "No changes to commit"
       
