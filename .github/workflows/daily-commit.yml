@@ -24,5 +24,5 @@ jobs:
           git config user.email "shivani_namratha@yahoo.com"
           git add last_updated.txt
           git commit last_updated.txt -m "Daily update: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          git push
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
       
