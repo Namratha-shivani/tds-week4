@@ -14,10 +14,12 @@ jobs:
 
       - name: Update timestamp file - 21f1001371@ds.study.iitm.ac.in
         run: |
-          echo "Last updated: $(date -u)" > last_updated.txt
+          echo "Last updated: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" > last_updated.txt
+
 
       - name: Commit and push
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add last_updated.txt
