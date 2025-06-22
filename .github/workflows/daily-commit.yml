@@ -20,7 +20,7 @@ jobs:
       - name: Commit and push
         run: |
           set -e
-          git config user.name "github-actions[bot]"
+          git config user.name "Namratha-shivani"
           git config user.email "shivani_namratha@yahoo.com"
           git add last_updated.txt
           git commit last_updated.txt -m "Daily update: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
